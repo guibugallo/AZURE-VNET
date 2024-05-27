@@ -10,10 +10,10 @@ terraform {
 
 
   backend "azurerm" {
-    resource_group_name  = "rg-terraform-state"
-    storage_account_name = "gbugalloterraformstate"
-    container_name       = "remote-state-gbugallo"
-    key                  = "azure-vnet/terraform.tfstate"
+    resource_group_name  = "nome-do-resource-group"
+    storage_account_name = "nome_da_sua_storage_account"
+    container_name       = "nome_do_seu_container"
+    key                  = "pasta/nomedo.arquivo"  #Recomendo utilizar o padrão Terraform sendo terraform.tfstate
   }
 }
 
